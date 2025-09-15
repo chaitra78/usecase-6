@@ -64,7 +64,7 @@ module "eks" {
         ElasticLoadBalancingFullAccess = "arn:aws:iam::aws:policy/ElasticLoadBalancingFullAccess"
       }
       # EKS takes AWS Linux 2 as it's OS to the nodes
-      key_name = data.aws_key_pair.project.key_name
+      #key_name = data.aws_key_pair.project.key_name
     }
     # green = {
     #   min_size      = 2
