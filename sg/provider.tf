@@ -6,7 +6,7 @@ terraform {
     }
   }
   backend "s3" { #backend info should always be in terraform block
-    bucket         = "devops-tfstate-hu2"
+    bucket         = "devops-tfstate-hu22"
     key            = "expense_k8_sg_module/terraform.tfstate"
     region         = "us-east-1" # region of bucket and dynamodbsss
   }
