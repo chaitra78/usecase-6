@@ -246,12 +246,12 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v3
 
-    - name: Configure AWS credentials from role
-      uses: aws-actions/configure-aws-credentials@v4
-      with:
-          role-to-assume: arn:aws:iam::180294178330:role/github_trust_role
-          role-session-name: github-actions
-          aws-region: us-east-1
+    # - name: Configure AWS credentials from role
+    #   uses: aws-actions/configure-aws-credentials@v4
+    #   with:
+    #       role-to-assume: arn:aws:iam::180294178330:role/github_trust_role
+    #       role-session-name: github-actions
+    #       aws-region: us-east-1
 
     - name: Install Terraform
       uses: hashicorp/setup-terraform@v3
