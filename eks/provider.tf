@@ -7,7 +7,7 @@ terraform {
   }
   backend "s3" { #backend info should always be in terraform block
     bucket         = "devops-tfstate-hu2"
-    key            = "eks/terraform.tfstate"
+    key            = "eks/hcl/terraform.tfstate"
     region         = "us-east-1" # region of bucket and dynamodb
     use_lockfile = true     #s3 by default supports locking but to be explicit
     encrypt       = true
